@@ -1,3 +1,5 @@
+// terminal print
+
 function greet(name: string): string {
     return `Hello ${name}!`;
 }
@@ -5,10 +7,19 @@ function greet(name: string): string {
 const message: string = greet ("there");
 console.log(message);
 
-// 
+// strings
 
 let fullName: string = "James";
 let age: number = 30;
 let sentence: string = `${message} My name is ${fullName} and I'm currently ${age} years old, and I will turn ${age + 1} next year.`;
 
 console.log(sentence);
+
+// symbols (unique identifier)
+
+const uniqueKey: symbol = Symbol('description');
+const obj = {
+    [uniqueKey]: 'This is a unique property'
+};
+
+console.log(obj[uniqueKey]);

@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "dev": "tsx type-annotations.ts"
+  },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "tsx": "^4.20.6"
   }
 }
